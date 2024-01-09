@@ -31,6 +31,7 @@ body {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-top: 3.56rem;
+    margin-bottom: 6.88rem;
 }
 
 .header h1 {
@@ -48,12 +49,12 @@ body {
     line-height: 1.625rem;
 }
 
-.header img {
-    position: relative;
-    width: 11.375rem;
-    height: 11.0625rem;
-    flex-shrink: 0;
-    margin-left: 15.6rem;
+.logo {
+    align-self: flex-end;
+    /* margin-left: 15.6rem;
     margin-right: 0.56rem;
-    margin-top: 0.88rem;
+    margin-top: 0.88rem; */
+    padding-right: 1.81rem;
+    padding-top: 1.5rem;
+
 }
