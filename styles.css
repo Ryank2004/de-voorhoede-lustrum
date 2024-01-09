@@ -23,6 +23,7 @@ body {
     font-family: var(--mainFont);
 }
 
+/* styling voor de header */
 
 .header {
     display: flex;
@@ -51,10 +52,146 @@ body {
 
 .logo {
     align-self: flex-end;
-    /* margin-left: 15.6rem;
-    margin-right: 0.56rem;
-    margin-top: 0.88rem; */
     padding-right: 1.81rem;
     padding-top: 1.5rem;
 
 }
+
+/* styling voor de tweede section */
+
+.introCard {
+    max-width: 27.625rem;
+    overflow: hidden;
+    margin: auto;
+}
+
+.introCardImageContainer {
+    position: relative;
+    width: 100%;
+}
+
+.introCardImage {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.introCardTitle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: white;
+    color: var(--primaryTextBtnColor);
+    padding-left: 1.63rem;
+    padding-top: 0.94rem;
+    padding-right: 0.81rem;
+    padding-bottom: 0.44rem;
+    font-family: var(--mainFont);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8125rem;
+}
+
+.introCardText {
+    font-family: var(--mainFont);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    color: var(--primaryTextBtnColor);
+    background-color: white;
+    padding-top: 1.31rem;
+    padding-left: 2.44rem;
+    padding-right: 0.81rem;
+    padding-bottom: 1.31rem;
+}
+
+/* Styling voor de lijst van feitjes en nummer */
+.facts {
+    text-align: center;
+    flex-direction: column;
+    padding-top: 6.88rem;
+}
+
+.factsTitle {
+    color: var(--primaryTextBtnColor);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8125rem;
+}
+
+.factsList {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    padding-bottom: 7.19rem;
+}
+
+.fact {
+    display: inline-block;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+    color: var(--primaryTextBtnColor);
+    background-color: var(--yellowTextBackground);
+    border-radius: 3.125rem;
+    padding-top: 0.31rem;
+    padding-bottom: 0.31rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin-bottom: 0.94rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introCardTitleTwee {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    color: var(--primaryTextBtnColor);
+    padding-left: 1.63rem;
+    padding-top: 0.94rem;
+    padding-right: 0.81rem;
+    padding-bottom: 0.44rem;
+    font-family: var(--mainFont);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8125rem;
+}
+
+.button {
+    border-radius: 0.3125rem;
+    background: var(--html-blue, #00F);
+    color: white;
+    text-decoration: none;
+    padding: 0.625rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin-bottom: 1.94rem;
+    margin-top: 2rem;
+
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
