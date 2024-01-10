@@ -167,6 +167,20 @@ body {
     line-height: 1.8125rem;
 }
 
+.introCardTextTwee {
+    font-family: var(--mainFont);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    color: var(--primaryTextBtnColor);
+    background-color: white;
+    padding-top: 1.31rem;
+    padding-left: 2.44rem;
+    padding-right: 0.81rem;
+    padding-bottom: 1.31rem;
+}
+
 .button {
     border-radius: 0.3125rem;
     background: var(--html-blue, #00F);
@@ -184,7 +198,7 @@ body {
 
 }
 
-.reveal{
+/* .reveal{
     position: relative;
     transform: translateY(150px);
     opacity: 0;
@@ -194,4 +208,4 @@ body {
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
-  }
+  } */
