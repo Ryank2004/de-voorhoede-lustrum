@@ -97,7 +97,7 @@ body {
     font-family: var(--mainFont);
     font-size: 1.125rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5625rem;
     color: var(--primaryTextBtnColor);
     background-color: white;
@@ -166,39 +166,165 @@ body {
     font-weight: 700;
     line-height: 1.8125rem;
 }
-
+.introTextContainer {
+    background-color: white;
+    margin-bottom: 6.88rem;
+}
 .introCardTextTwee {
     font-family: var(--mainFont);
     font-size: 1.125rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5625rem;
     color: var(--primaryTextBtnColor);
-    background-color: white;
     padding-top: 1.31rem;
     padding-left: 2.44rem;
     padding-right: 0.81rem;
-    padding-bottom: 1.31rem;
+    /* padding-bottom: 1.31rem; */
 }
 
 .button {
+    border: none;
     border-radius: 0.3125rem;
     background: var(--html-blue, #00F);
     color: white;
     text-decoration: none;
-    padding: 0.625rem 1rem;
+    padding: 0.425rem .8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+
+}
+
+/* Styling voor stukje over Jasper */
+
+.profileJasper {
+    display: inline-block;
+    flex-direction: column;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.titleJasper {
+    color: var(--primaryTextBtnColor);
+    font-family: var(--mainFont);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8125rem;
+}
+
+.textJasper {
+    color: black;
+    font-family: var(--mainFont);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.1875rem;
+    margin-top: 0.31rem;
+}
+
+.buttonJasper{
+    border: none;
+    border-radius: 0.3125rem;
+    background: var(--html-blue, #00F);
+    color: white;
+    text-decoration: none;
+    padding: 0.425rem .8rem;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.25rem;
-    margin-bottom: 1.94rem;
-    margin-top: 2rem;
-
+    margin-top: 0.94rem;
 }
 
-/* .reveal{
+
+/* Timeline styling */
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    padding-left: 40px; /* Increase padding to move the text away from the line */
+    margin-top: 7.22rem;
+    font-family: var(--mainFont);
+    align-items: center;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 21px; /* Adjust this value to position the line to the left */
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Width of the vertical line */
+    background-color: blue; /* Color of the vertical line */
+    z-index: 1;
+}
+
+.timeline .event {
+    position: relative;
+    margin-bottom: 20px; /* Space between events */
+    padding-left: 20px; /* Add padding to position the text further from the line */
+    padding-top: 3.44rem;
+}
+
+.timeline .event .date {
+    font-weight: 300;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.timeline .event .event-content {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.timeline .event .dot {
+    flex-shrink: 0;
+    margin-right: 10px;
+    position: absolute;
+    left: -30px;
+    top: 5.1275rem;
+}
+
+.timeline .event .title {
+    color: blue;
+    margin: 0;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8125rem;
+    margin-top: 0.31rem;
+}
+
+.timeline .event p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top:0.31rem;
+    margin-bottom: 1.56rem;
+    line-height: 1.5625rem;
+}
+
+.timeline .event .imageTimeline {
+    width: 100%;
+    max-width: 25.8125rem;
+    padding-right: 1.38rem;
+}
+
+
+/* classes voor de scroll down animatie */
+
+.reveal{
     position: relative;
     transform: translateY(150px);
     opacity: 0;
@@ -208,4 +334,4 @@ body {
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
-  } */
+  }
