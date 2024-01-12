@@ -12,7 +12,7 @@
     --primaryTextBtnColor:#0000FF;
     --yellowTextBackground:#FFE400;
     --lightTextBackground:rgba(255, 255, 255, 1);
-    --mainFont: "Inter";
+    /* --mainFont: "Inter"; */
 }
 
 /* font-face {
@@ -24,7 +24,7 @@
 body {
     font-family: 'Inter';
     background-color: var(--backgroundColor);
-    font-family: var(--mainFont);
+    /* font-family: var(--mainFont); */
 }
 
 
