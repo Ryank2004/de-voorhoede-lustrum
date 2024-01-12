@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 :root {
     --backgroundColor:#FFFECA;
     --primaryTextBtnColor:#0000FF;
@@ -13,12 +15,14 @@
     --mainFont: "Inter";
 }
 
-font-face {
-    font-family:"Inter";
+/* font-face {
+    font-family:'Inter', sans-serif;
     src: url(./Font/Inter-VariableFont_slnt\,wght.ttf);
-}
+    font-weight: 1 1000;
+} */
 
 body {
+    font-family: 'Inter';
     background-color: var(--backgroundColor);
     font-family: var(--mainFont);
 }
@@ -87,7 +91,7 @@ body {
     padding-top: 0.94rem;
     padding-right: 0.81rem;
     padding-bottom: 0.44rem;
-    font-family: var(--mainFont);
+    /* font-family: var(--mainFont); */
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
@@ -95,7 +99,7 @@ body {
 }
 
 .introCardText {
-    font-family: var(--mainFont);
+    /* font-family: var(--mainFont); */
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 300;
@@ -161,7 +165,7 @@ body {
     padding-top: 0.94rem;
     padding-right: 0.81rem;
     padding-bottom: 0.44rem;
-    font-family: var(--mainFont);
+    /* font-family: var(--mainFont); */
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
@@ -172,7 +176,7 @@ body {
     margin-bottom: 6.88rem;
 }
 .introCardTextTwee {
-    font-family: var(--mainFont);
+    /* font-family: var(--mainFont); */
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 300;
@@ -220,7 +224,7 @@ body {
 .titleJasper {
     align-self: flex-start;
     color: var(--primaryTextBtnColor);
-    font-family: var(--mainFont);
+    /* font-family: var(--mainFont); */
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
@@ -230,7 +234,7 @@ body {
 .textJasper {
     align-self: flex-start;
     color: black;
-    font-family: var(--mainFont);
+    /* font-family: var(--mainFont); */
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 300;
@@ -260,29 +264,29 @@ body {
 
 .timeline {
     list-style: none;
-    padding: 0;
     position: relative;
-    padding-left: 40px; /* Increase padding to move the text away from the line */
+    padding-left: 40px;
     margin-top: 7.22rem;
-    font-family: var(--mainFont);
+    /* font-family: var(--mainFont); */
     align-items: center;
+    padding-bottom: 6.5rem;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 21px; /* Adjust this value to position the line to the left */
+    left: 21px;
     top: 0;
     bottom: 0;
-    width: 2px; /* Width of the vertical line */
-    background-color: blue; /* Color of the vertical line */
+    width: 2px;
+    background-color: blue;
     z-index: 1;
 }
 
 .timeline .event {
     position: relative;
-    margin-bottom: 20px; /* Space between events */
-    padding-left: 20px; /* Add padding to position the text further from the line */
+    margin-bottom: 20px;
+    padding-left: 20px; 
     padding-top: 3.44rem;
 }
 
