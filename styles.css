@@ -13,24 +13,15 @@
     --primaryTextBtnColor:#0000FF;
     --yellowTextBackground:#FFE400;
     --lightTextBackground:rgba(255, 255, 255, 1);
-    /* --mainFont: "Inter"; */
 }
 
-/* font-face {
-    font-family:'Inter', sans-serif;
-    src: url(./Font/Inter-VariableFont_slnt\,wght.ttf);
-    font-weight: 1 1000;
-} */
 
 body {
     font-family: "Inter", sans-serif;
     background-color: var(--backgroundColor);
-    /* font-family: var(--mainFont); */
 }
 
-
-/* styling voor de header */
-
+/* Header styling */
 .header {
     display: flex;
     flex-direction: column;
@@ -39,21 +30,21 @@ body {
     padding-right: 1.25rem;
     padding-top: 3.56rem;
     margin-bottom: 6.88rem;
-}
 
-.header h1 {
-    font-weight: 700;
-    font-size: 2.4375rem;
-    line-height: 2.75rem;
-    font-style: normal;
-    padding-top: 0.62rem;
-}
+    & h1 {
+        font-weight: 700;
+        font-size: 2.4375rem;
+        line-height: 2.75rem;
+        font-style: normal;
+        padding-top: 0.62rem;
+    }
 
-.header p {
-    font-size: 1.3125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.625rem;
+    & p {
+        font-size: 1.3125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.625rem;
+    }
 }
 
 .logo {
@@ -63,54 +54,52 @@ body {
 
 }
 
-/* styling voor de tweede section */
-
+/* Styling voor het eerste kaartje */
 .introCard {
     max-width: 27.625rem;
     overflow: hidden;
     margin: auto;
+
+
+    & .introCardImageContainer {
+        position: relative;
+        width: 100%;
+    }
+
+    & .introCardImage {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    & .introCardTitle {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: white;
+        color: var(--primaryTextBtnColor);
+        padding-left: 1.63rem;
+        padding-top: 0.94rem;
+        padding-right: 0.81rem;
+        padding-bottom: 0.44rem;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.8125rem;
 }
 
-.introCardImageContainer {
-    position: relative;
-    width: 100%;
-}
-
-.introCardImage {
-    width: 100%;
-    display: block;
-    height: auto;
-}
-
-.introCardTitle {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: white;
-    color: var(--primaryTextBtnColor);
-    padding-left: 1.63rem;
-    padding-top: 0.94rem;
-    padding-right: 0.81rem;
-    padding-bottom: 0.44rem;
-    /* font-family: var(--mainFont); */
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.8125rem;
-}
-
-.introCardText {
-    /* font-family: var(--mainFont); */
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.5625rem;
-    color: var(--primaryTextBtnColor);
-    background-color: white;
-    padding-top: 1.31rem;
-    padding-left: 2.44rem;
-    padding-right: 0.81rem;
-    padding-bottom: 1.31rem;
+    & .introCardText {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5625rem;
+        color: var(--primaryTextBtnColor);
+        background-color: white;
+        padding-top: 1.31rem;
+        padding-left: 2.44rem;
+        padding-right: 0.81rem;
+        padding-bottom: 1.31rem;
+    }
 }
 
 /* Styling voor de lijst van feitjes en nummer */
@@ -118,227 +107,211 @@ body {
     text-align: center;
     flex-direction: column;
     padding-top: 6.88rem;
-}
 
-.factsTitle {
-    color: var(--primaryTextBtnColor);
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.8125rem;
-}
 
-.factsList {
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    list-style-type: none;
-    align-items: center;
-    padding-bottom: 7.19rem;
-}
+    & .factsTitle {
+        color: var(--primaryTextBtnColor);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.8125rem;
+    }
 
-.fact {
-    display: inline-block;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.875rem;
-    color: var(--primaryTextBtnColor);
-    background-color: var(--yellowTextBackground);
-    border-radius: 3.125rem;
-    padding-top: 0.31rem;
-    padding-bottom: 0.31rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    margin-bottom: 0.94rem;
-    margin-left: auto;
-    margin-right: auto;
-}
+    & .factsList {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        list-style-type: none;
+        align-items: center;
+        padding-bottom: 7.19rem;
+    }
 
-.introCardTitleTwee {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: white;
-    color: var(--primaryTextBtnColor);
-    padding-left: 1.63rem;
-    padding-top: 0.94rem;
-    padding-right: 0.81rem;
-    padding-bottom: 0.44rem;
-    /* font-family: var(--mainFont); */
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.8125rem;
+    & .fact {
+        display: inline-block;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875rem;
+        color: var(--primaryTextBtnColor);
+        background-color: var(--yellowTextBackground);
+        border-radius: 3.125rem;
+        padding-top: 0.31rem;
+        padding-bottom: 0.31rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        margin-bottom: 0.94rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-.introTextContainer {
-    background-color: white;
-    margin-bottom: 6.88rem;
-}
-.introCardTextTwee {
-    /* font-family: var(--mainFont); */
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.5625rem;
-    color: var(--primaryTextBtnColor);
-    padding-top: 1.31rem;
-    padding-left: 2.44rem;
-    padding-right: 0.81rem;
-    /* padding-bottom: 1.31rem; */
-}
+/* Styling voor de tweede kaart */
+.introCard {
+    max-width: 27.625rem;
+    overflow: hidden;
+    margin: auto;
 
-.button {
-    border: none;
-    border-radius: 0.3125rem;
-    background: var(--html-blue, #00F);
-    color: white;
-    text-decoration: none;
-    padding: 0.425rem .8rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.25rem;
-    margin-bottom: 1.5rem;
-    margin-top: 1rem;
+    & .introCardTitleTwee {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: white;
+        color: var(--primaryTextBtnColor);
+        padding-left: 1.63rem;
+        padding-top: 0.94rem;
+        padding-right: 0.81rem;
+        padding-bottom: 0.44rem;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.8125rem;
+    }
+    & .introTextContainer {
+        background-color: white;
+        margin-bottom: 6.88rem;
+    }
+    & .introCardTextTwee {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5625rem;
+        color: var(--primaryTextBtnColor);
+        padding-top: 1.31rem;
+        padding-left: 2.44rem;
+        padding-right: 0.81rem;
+    }
 
+    & .button {
+        border: none;
+        border-radius: 0.3125rem;
+        background: var(--html-blue, #00F);
+        color: white;
+        text-decoration: none;
+        padding: 0.425rem .8rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.25rem;
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+
+    }
 }
-
 /* Styling voor stukje over Jasper */
-
 .profileJasper {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 1.25rem;
     margin-right: 1.25rem;
-}
 
-.profilePictureJasper {
-    border-radius: 50%;
-    margin-bottom: 1.56rem;
-}
 
-.titleJasper {
-    align-self: flex-start;
-    color: var(--primaryTextBtnColor);
-    /* font-family: var(--mainFont); */
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.8125rem;
-}
+    & .profilePictureJasper {
+        border-radius: 50%;
+        margin-bottom: 1.56rem;
+    }
 
-.textJasper {
-    align-self: flex-start;
-    color: black;
-    /* font-family: var(--mainFont); */
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 2.1875rem;
-    margin-top: 0.31rem;
-}
+    & .titleJasper {
+        align-self: flex-start;
+        color: var(--primaryTextBtnColor);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.8125rem;
+    }
 
-.buttonJasper{
-    align-self: flex-start;
-    border: none;
-    border-radius: 0.3125rem;
-    background: var(--html-blue, #00F);
-    color: white;
-    text-decoration: none;
-    padding: 0.425rem .8rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.25rem;
-    margin-top: 0.94rem;
-}
+    & .textJasper {
+        align-self: flex-start;
+        color: black;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 2.1875rem;
+        margin-top: 0.31rem;
+    }
 
+    & .buttonJasper{
+        align-self: flex-start;
+        border: none;
+        border-radius: 0.3125rem;
+        background: var(--html-blue, #00F);
+        color: white;
+        text-decoration: none;
+        padding: 0.425rem .8rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        margin-top: 0.94rem;
+    }
+}
 
 /* Timeline styling */
-
-.timeline {
-    list-style: none;
-    position: relative;
-    padding-left: 40px;
-    margin-top: 7.22rem;
-    /* font-family: var(--mainFont); */
-    align-items: center;
-    padding-bottom: 6.5rem;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 21px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: blue;
-    z-index: 1;
-}
-
-.timeline .event {
-    position: relative;
-    margin-bottom: 20px;
-    padding-left: 20px; 
-    padding-top: 3.44rem;
-}
-
-.timeline .event .date {
-    font-weight: 300;
-    position: relative;
-    z-index: 2;
-    
-}
-
-.timeline .event .event-content {
+.timelineContainer {
     display: flex;
-    align-items: center;
-    z-index: 2;
-}
+    position: relative;
+    justify-content: center;
+    padding: 1em;
+    margin: 0 auto;
+    margin-top: 7.22rem;
 
-.timeline .event .dot {
-    flex-shrink: 0;
-    margin-right: 10px;
-    position: absolute;
-    left: -30px;
-    top: 5.1275rem;
-}
+    & .timeline {
+        flex-direction: column;
+        list-style: none;
+        max-width: 27.625rem;
+        padding-left: 0.63rem;
+        padding-bottom: 6.5rem;
+        border-left: 0.1em solid var(--primaryTextBtnColor);
+    
+        & .event {
+            padding-left: .87rem; 
+            padding-bottom: 3.44rem;
 
-.timeline .event .title {
-    color: blue;
-    margin: 0;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.8125rem;
-    margin-top: 0.31rem;
-}
+            & .title {
+                color: blue;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.8125rem;
+                margin-top: 0.31rem;
+            }
 
-.timeline .event p {
-    font-size: 1rem;
-    font-weight: 300;
-    margin-top:0.31rem;
-    margin-bottom: 1.56rem;
-    line-height: 1.5625rem;
-}
+            & .title::before {
+                content: "";
+                background-color: var(--primaryTextBtnColor);
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                position: absolute;
+                left: -0.965em;
+            }
 
-.timeline .event .imageTimeline {
-    width: 100%;
-    max-width: 25.8125rem;
-    padding-right: 1.38rem;
-}
+            & .date {
+                font-weight: 300;
+                z-index: 2;
+            }
 
+            & p {
+                font-size: 1rem;
+                font-weight: 300;
+                margin-top:0.31rem;
+                margin-bottom: 1.56rem;
+                line-height: 1.5625rem;
+            }
+
+            & .imageTimeline {
+                width: 100%;
+                max-width: 25.8125rem;
+                padding-right: 1.38rem;
+            }
+        }
+}}
 
 /* classes voor de scroll down animatie */
-
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -346,7 +319,7 @@ body {
     transition: 1s all ease;
   }
   
-  .reveal.active{
+ & .active{
     transform: translateY(0);
     opacity: 1;
   }
