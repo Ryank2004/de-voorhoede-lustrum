@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,28 +133,64 @@
 
     <!-- Reis door de tijd -->
     
-    <section>
-        
+    <section class="reveal">
         <h3 class="collageTitel">Een reis door de tijd</h3>
-        
-        <div class="gridContainer">
-            <img src="./Images/reis1.png">
-            <img src="./Images/reis2.png">
-            <img src="./Images/reis3.png">
-            <img src="./Images/reis4.png">
-            <img src="./Images/reis5.png">
-            <img src="./Images/reis6.png">
-            <img src="./Images/reis7.png">
-            <img src="./Images/reis8.png">
-            <img src="./Images/reis9.png">
-            <img src="./Images/reis10.png">
-            <img src="./Images/reis11.png">
-            <img src="./Images/reis12.png">
-            <img src="./Images/reis13.png">
-            <img src="./Images/reis14.png">
-            <img src="./Images/reis15.png">
-            <img src="./Images/reis16.png">
-        </div>
+            <div class="gridContainer">
+                <img src="./Images/reis1.png">
+                <img src="./Images/reis2.png">
+                <img src="./Images/reis3.png">
+                <img src="./Images/reis4.png">
+                <img src="./Images/reis5.png">
+                <img src="./Images/reis6.png">
+                <img src="./Images/reis7.png">
+                <img src="./Images/reis8.png">
+                <img src="./Images/reis9.png">
+                <img src="./Images/reis10.png">
+                <img src="./Images/reis11.png">
+                <img src="./Images/reis12.png">
+                <img src="./Images/reis13.png">
+                <img src="./Images/reis14.png">
+                <img src="./Images/reis15.png">
+                <img src="./Images/reis16.png">
+            </div>
+    </section>
+
+    <!-- Felicitatie formulier -->
+    <section class="felicitatieContainer">
+        <article class="felicitatieSection">
+            <div class="felicitatieText">
+                <h1>Hiep hiep hoera!</h1>
+                <p>Je felicitatie sturen via ons formulier, dat kan!</p>
+            </div>
+                <form class="felicitatieForm">
+                    <label for="name">Mijn naam is</label>
+                    <input type="text" name="name" placeholder="Naam">
+                    <label for="email">Mijn e-mailadres is</label>
+                    <input type="email" name="email" placeholder="E-mailadres">
+                    <label for="message">Mijn bericht</label>
+                    <textarea name="message" placeholder="Felicitatie"></textarea>
+                    <input class="button" type="submit" value="Versturen →">
+                </form>
+        </article>
+    </section>
+
+    <!-- comments -->
+    <section>
+        <h2>Felicitaties</h2>
+        <ul class="comment-list">
+            <li>
+                <p>“Gefeliciteerd met jullie 10 jaar! Op nog vele jaren!”</p>
+                <span>door Koop</span>
+            </li>
+            <li>
+                <p>“Vanaf het begin er bij geweest. Op naar de volgende 10”</p>
+                <span>door Declan</span>
+            </li>
+            <li>
+                <p>“Gefeliciteerd!”</p>
+                <span>door Jasper</span>
+            </li>
+        </ul>
     </section>
     <script src="script.js"></script>  
 </body>
