@@ -422,26 +422,28 @@ h2 {
     line-height: 1.8125rem;
     padding-top: 6.87rem;
 }
-.comment-list {
+.berichtenLijst {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 1em;
+    margin-left: 2.59rem;
+    margin-right: 1.44rem;
+    margin-bottom: 8.75rem;
 
     & li {
-        border-left: 0.1em solid var(--dark);
+        border-left: 0.1em solid var(--dim, #888);
         padding: 1em;
         margin-bottom: 1em;
 
         & p {
-            color: var(--html-blue);
+            color: var(--primaryTextBtnColor);
         }
 
         & span {
             display: inline-block;
-            color: var(--dark);
-            font-size: var(--span-size);
+            margin-top: 0.31rem;
         }
     }}
 /* classes voor de scroll down animatie */
