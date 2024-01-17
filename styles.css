@@ -29,12 +29,17 @@ h1 {
     color: var(--primaryTextBtnColor);
 }
 
-
+h2 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8125rem;
+}
 p {
-    font-size: 1.3125rem;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 300;
-    line-height: 1.625rem;
+    line-height: 1.5625rem;
 }
 
 .button {
@@ -53,6 +58,7 @@ p {
     margin-bottom: 1.5rem;
     margin-top: 1rem;
 }
+
 /* Header styling */
 .header {
     display: flex;
@@ -99,17 +105,9 @@ p {
         padding-top: 0.94rem;
         padding-right: 0.81rem;
         padding-bottom: 0.44rem;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.8125rem;
 }
 
     & .introCardText {
-        font-size: 1.125rem;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 1.5625rem;
         color: var(--primaryTextBtnColor);
         background-color: white;
         padding-top: 1.31rem;
@@ -163,10 +161,16 @@ p {
     }
 }
 /* Styling voor de tweede kaart */
-.introCard {
+.introCardTwee {
     max-width: 27.625rem;
     overflow: hidden;
     margin: auto;
+
+    & .introCardImageContainerTwee {
+        position: relative;
+        width: 100%;
+        bottom: -4px;
+    }
 
     & .introCardTitleTwee {
         position: absolute;
@@ -178,20 +182,12 @@ p {
         padding-top: 0.94rem;
         padding-right: 0.81rem;
         padding-bottom: 0.44rem;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.8125rem;
     }
     & .introTextContainer {
         background-color: white;
         margin-bottom: 6.88rem;
     }
     & .introCardTextTwee {
-        font-size: 1.125rem;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 1.5625rem;
         color: var(--primaryTextBtnColor);
         padding-top: 1.31rem;
         padding-left: 2.44rem;
@@ -216,17 +212,12 @@ p {
         align-self: flex-start;
         color: var(--primaryTextBtnColor);
         font-size: 1.125rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.8125rem;
     }
 
     & .textJasper {
         align-self: flex-start;
         color: black;
         font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 300;
         line-height: 2.1875rem;
         margin-top: 0.31rem;
     }
@@ -349,7 +340,6 @@ p {
     max-width: 100%;
 
  & .felicitatieSection {
-    /* display: flex; */
     display: grid;
     max-width: 100%;
     grid-template-columns: repeat(6, 1fr);
@@ -365,10 +355,15 @@ p {
         grid-column-end: span 6;
         grid-row-start: 1;
         grid-row-end: span 5;
+        
+        & h1 {
+            font-size: 2rem;
+        }
 
     
         & p {
             color: var(--primaryTextBtnColor);
+            font-size: 1.1rem;
         }
     }
 
@@ -411,8 +406,13 @@ p {
 }}
 
 /* Felicitatie berichten */
+.berichtenSection{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
 
-h2 {
+    & h2 {
     display: flex;
     justify-content: center;
     color: var(--primaryTextBtnColor);
@@ -422,7 +422,7 @@ h2 {
     line-height: 1.8125rem;
     padding-top: 6.87rem;
 }
-.berichtenLijst {
+    & .berichtenLijst {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -445,7 +445,8 @@ h2 {
             display: inline-block;
             margin-top: 0.31rem;
         }
-    }}
+    }}}
+
 /* classes voor de scroll down animatie */
 .reveal{
     position: relative;
@@ -457,4 +458,174 @@ h2 {
 .active{
     transform: translateY(0);
     opacity: 1;
+  }
+/* Tablet styling */
+@media screen and (min-width: 720px) {
+    
+.introCard {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: 41.4375rem;
+        /* overflow: hidden; */
+        margin: auto;
+    
+    
+        & .introCardImageContainer {
+            position: relative;
+            width: 100%;
+            max-width: 27.625rem;
+        }
+    
+        & .introCardImage {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+    
+        & .introCardTitle {
+            position: absolute;
+            bottom: -1px;
+            right: -8.38rem;
+            background: white;
+            color: var(--primaryTextBtnColor);
+            padding-left: 1.63rem;
+            padding-top: 0.94rem;
+            padding-right: 0.81rem;
+            padding-bottom: 0.44rem;
+    }
+    
+        & .introCardText {
+            color: var(--primaryTextBtnColor);
+            background-color: white;
+            padding-top: 1.31rem;
+            padding-left: 2.44rem;
+            padding-right: 0.81rem;
+            padding-bottom: 1.31rem;
+            max-width: 27.625rem;
+            margin-left: 13.8125rem;
+            /* left: 6.69rem; */
+            /* justify-content: right; */
+        }
+    }
+/* Styling feitjes tablet */
+.facts {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    
+        & .factsTitle {
+            font-size: 1.5rem;
+        }
+    
+        & .factsList {
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        & .fact {
+            font-size: 1.250rem;
+            padding-top: 0.45rem;
+            padding-bottom: 0.45rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-bottom: 0.94rem;
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+        }
+    }   
+   
+/* Tweede info kaart tablet styling */
+.introCardTwee {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: end;
+        max-width: 41.4375rem;
+        margin: auto;
+    
+        & .introCardImageContainerTwee {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            max-width: 27.625rem;
+        }
+
+        & .introCardTitleTwee {
+            position: absolute;
+            bottom: -1px;
+            left: -5.15rem;
+            background: white;
+            color: var(--primaryTextBtnColor);
+            padding-left: 1.63rem;
+            padding-top: 0.94rem;
+            padding-right: 0.81rem;
+            padding-bottom: 0.44rem;
+        }
+        & .introTextContainer {
+            background-color: white;
+            margin-bottom: 6.88rem;
+            margin-right: 13.8125rem;
+        }
+        & .introCardTextTwee {
+            color: var(--primaryTextBtnColor);
+            padding-top: 1.31rem;
+            padding-left: 2.44rem;
+            padding-right: 0.81rem; 
+        }
+    }
+    .profileJasper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    
+    
+        & .profilePictureJasper {
+            border-radius: 50%;
+            margin-bottom: 2.2rem;
+            margin-right: 2.82rem;
+        }
+    
+        & .titleJasper {
+            align-self: flex-start;
+            color: var(--primaryTextBtnColor);
+            font-size: 1.125rem;
+        }
+    
+        & .textJasper {
+            align-self: flex-start;
+            color: black;
+            font-size: 1.25rem;
+            line-height: 2.1875rem;
+            margin-top: 0.31rem;
+        }
+    
+        & .buttonJasper{
+            align-self: flex-start;
+            border: none;
+            border-radius: 0.3125rem;
+            background: var(--html-blue, #00F);
+            color: white;
+            text-decoration: none;
+            padding: 0.425rem .8rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.25rem;
+            margin-top: 0.94rem;
+        }
+    }
+
+
+
+
+
+
   }
