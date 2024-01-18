@@ -19,21 +19,26 @@ function reveal() {
     }
   }
   
-function checkHeight() {
-  if(window.scrollY > 1000) {
-    backToTop.style.display = "flex"
-  } else {
-    backToTop.style.display = "none"
+  function checkHeight() {
+    if(window.innerWidth <= 720) {
+      if(window.scrollY > 1000) {
+        backToTop.style.display = "flex";
+      } else {
+        backToTop.style.display = "none";
+      }
+    } else {
+      backToTop.style.display = "none";
+    }
   }
-} 
-
-backToTop.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  })
-
-})
-
+  
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+  
+  window.addEventListener("resize", checkHeight);
+  
 
   

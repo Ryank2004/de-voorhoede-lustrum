@@ -59,6 +59,7 @@ p {
     margin-top: 1rem;
 }
 
+/* Button om terug omhoog te gaan */
 .backToTop {
     display: none;
     flex-direction: column;
@@ -330,44 +331,58 @@ p {
 }}
 
 /* Reis door de tijd */
-.collageTitel {
+
+.reis {
     display: flex;
+    flex-direction: column;
     position: relative;
     justify-content: center;
-    margin: auto;
-    color: blue;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.8125rem;
+    align-items: center;
     margin-top: 6.88rem;
-    margin-bottom: 1.58rem;
-}
 
-.gridContainer {
-    display: grid;
-    grid-template-columns: 1.0613fr 1fr;
-    gap: 0;
-    max-width: 480px;
-    margin: 0 auto;
-    overflow: hidden;
+    & .collageTitel {
+        color: blue;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.8125rem;
+        margin-bottom: 1.58rem;
+        }
 
-    & img {
-        max-width: 100%;
-        height: auto; 
-        display: block;
-        border: none;
+    & .gridContainerMobile {
+        display: grid;
+        grid-template-columns: 1.0613fr 1fr;
+        gap: 0;
+        max-width: 480px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        & img {
+            max-width: 100%;
+            height: auto; 
+            display: block;
+            border: none;
+        }
     }
-}
+    & .gridContainerTablet {
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0;
+        margin: 0 auto;
+        overflow: hidden;
+    
+            & img {
+                max-width: 100%;
+                height: auto; 
+                display: block;
+                border: none;
+            }
+
+    }}
 
 /* FelicitatieSection */
-.felicitatieContainer {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    max-width: 100%;
 
- & .felicitatieSection {
+ .felicitatieSection {
     display: grid;
     max-width: 100%;
     grid-template-columns: repeat(6, 1fr);
@@ -385,13 +400,14 @@ p {
         grid-row-end: span 5;
         
         & h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
+            margin-bottom: .5rem;
         }
 
     
         & p {
             color: var(--primaryTextBtnColor);
-            font-size: 1.1rem;
+            font-size: 3.66vw;
         }
     }
 
@@ -431,7 +447,7 @@ p {
             font-size: 1em;
         }
     }
-}}
+}
 
 /* Felicitatie berichten */
 .berichtenSection{
@@ -489,6 +505,7 @@ p {
   }
 /* Tablet styling */
 @media screen and (min-width: 720px) {
+
     
 .introCard {
         display: flex;
@@ -538,6 +555,7 @@ p {
     }
 /* Styling feitjes tablet */
 .facts {
+    padding-top: 3.88rem;
     padding-left: 1rem;
     padding-right: 1rem;
     
@@ -552,6 +570,7 @@ p {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            padding-bottom: 3.19rem;
         }
     
         & .fact {
@@ -653,9 +672,80 @@ p {
         }
     }
 
+/* Reis door de tijd tablet styling */
 
+.reis {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.88rem;
 
-
-
-
+    & .gridContainerMobile {
+    display: none;
   }
+
+    & .gridContainerTablet {
+    display: grid;
+}
+}
+
+/* Felicitatie forum stylen tablet */
+.felicitatieSection {
+    display: grid;
+    
+    & .felicitatieText {
+   
+
+        & h1 {
+        
+        font-size: 2.3rem;
+        margin-bottom: .7rem;
+        }
+
+        & p {
+        
+        font-size: 1.7rem;
+     }}
+
+     & .felicitatieForm {
+
+        & label {
+            font-size: 1.2em;
+        }
+
+        & input[type=text], input[type=email], textarea {
+            font-size: 1.2em;
+        }
+
+        & textarea {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.berichtenSection {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    & .berichtenLijst {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2em;
+        margin-left: 2.59rem;
+        margin-right: 1.44rem;
+        margin-bottom: 8.75rem;
+
+        & li {
+            border-left: 0.1em solid var(--dim, #888);
+            padding: 1em;
+            margin-bottom: 3em;
+            width: 40vw;
+}}
+
+}
