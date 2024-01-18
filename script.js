@@ -1,6 +1,11 @@
+
+var reveals = document.querySelectorAll(".reveal");
+var backToTop = document.querySelector(".backToTop");
+
+window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", checkHeight);
+
 function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-  
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
@@ -14,7 +19,21 @@ function reveal() {
     }
   }
   
-  window.addEventListener("scroll", reveal);
+function checkHeight() {
+  if(window.scrollY > 1000) {
+    backToTop.style.display = "flex"
+  } else {
+    backToTop.style.display = "none"
+  }
+} 
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+
+})
 
 
   
