@@ -1,6 +1,6 @@
 
-var reveals = document.querySelectorAll(".reveal");
-var backToTop = document.querySelector(".backToTop");
+let reveals = document.querySelectorAll(".reveal");
+let backToTop = document.querySelector(".backToTop");
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", checkHeight);

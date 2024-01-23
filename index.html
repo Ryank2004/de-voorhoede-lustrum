@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De Verhoede</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-    <button class="backToTop"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></button>
+    <button class="backToTop"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+        </svg></button>
+
     <!-- header -->
 
     <header class="header">
-        <p>Lustrum</p>
+        <div class="headerText">
+            <p>Lustrum</p>
             <h1>De Voorhoede<br>bestaat 10 jaar!</h1>
-                <div class="logo"><img src="./Images/DeVoorhoedeLogo.png"></div>
+        </div>
+        <div class="logo"><img src="./Images/DeVoorhoedeLogo2.png" alt="De Voorhoede logo"></div>
     </header>
 
     <!-- Kaart één -->
     <section>
         <article class="introCard">
             <div class="introCardImageContainer">
-                <img src="./Images/VoorhoedeToekomst.png" class="introCardImage">
-                <h2 class="introCardTitle">De toekomst van front-end</h2>
+                <img src="./Images/DesktopToekomst.png" class="introCardImage"
+                    alt="presentatie over toekomst van De Voorhoede">
             </div>
-            <p class="introCardText">Op 1 oktober 2022 bestaat De Voorhoede alweer 10 jaar: een lustrum! De afgelopen jaren is onze organisatie flink gegroeid: in kantoor, kennis en collega’s. Er is veel veranderd. Niet alleen bij De Voorhoede, maar ook op front-end gebied. Natuurlijk hebben we ook heel veel plannen voor de komende jaren. Blik met ons terug op de eerste 10 jaar en kijk mee naar onze voorspellingen voor de toekomst.</p>
+        <div class="introCardTextContainer">
+            <h2 class="introCardTitle">De toekomst van front-end</h2>
+            <p class="introCardText">Op 1 oktober 2022 bestaat De Voorhoede alweer 10 jaar: een lustrum! De afgelopen
+                jaren is onze organisatie flink gegroeid: in kantoor, kennis en collega’s. Er is veel veranderd. Niet
+                alleen bij De Voorhoede, maar ook op front-end gebied. Natuurlijk hebben we ook heel veel plannen voor
+                de komende jaren. Blik met ons terug op de eerste 10 jaar en kijk mee naar onze voorspellingen voor de
+                toekomst.
+            </p>
+        </div> 
         </article>
     </section>
 
@@ -55,12 +72,17 @@
     <section>
         <article class="introCardTwee reveal">
             <div class="introCardImageContainerTwee">
-                <img src="./Images/DeVoorhoede2.png" class="introCardImage">
-                <h2 class="introCardTitleTwee">Onze visie op frontend</h2>
+                <img src="./Images/desktopdevoorhoede.png" class="introCardImage" alt="Algemene foto">
+                
             </div>
             <div class="introTextContainer">
-                <p class="introCardTextTwee">Dit jaar bestaat De Voorhoede 10 jaar. In al die jaren is front-end gegroeid van een niche naar een onderdeel van alles. Wij vinden het erg leuk om koplopers te zijn en kijken nu naar wat de toekomst van front-end ons gaat brengen.<br><button class="button">Lees alles over de toekomst van front-end</button></p>
-            </div>  
+                <h2 class="introCardTitleTwee">Onze visie op frontend</h2>
+                <p class="introCardTextTwee">Dit jaar bestaat De Voorhoede 10 jaar. In al die jaren is front-end
+                    gegroeid van een niche naar een onderdeel van alles. Wij vinden het erg leuk om koplopers te zijn en
+                    kijken nu naar wat de toekomst van front-end ons gaat brengen.<br><button class="button">Lees alles
+                        over de toekomst van front-end</button>
+                    </p>
+            </div>
         </article>
     </section>
 
@@ -68,31 +90,33 @@
 
     <section>
         <div class="profileJasper reveal">
-            <img class="profilePictureJasper" src="./Images/Jasper.png">
+            <img class="profilePictureJasper" src="./Images/Jasper.png" alt="profielfoto van Jasper">
 
             <div class="profileJasperItems">
                 <h2 class="titleJasper">De grote droom van Jasper:</h2>
-                <p class="textJasper">“Het klinkt weinig ambitieus, maar ik hoop dat we vooral dit kunnen blijven doen, wat we doen. Als hecht en gespecialiseerd team een impact maken binnen het vakgebied. En voorop lopen in de beste front-end oplossingen.”</p>
-                <button class="buttonJasper">Lees het hele interview</button>
+                <p class="textJasper">“Het klinkt weinig ambitieus, maar ik hoop dat we vooral dit kunnen blijven doen,
+                    wat we doen. Als hecht en gespecialiseerd team een impact maken binnen het vakgebied. En voorop
+                    lopen in de beste front-end oplossingen.”</p>
+                <button class="button">Lees het hele interview</button>
             </div>
-            
+
         </div>
     </section>
 
     <!-- tijdlijn van 10 jaar -->
-    
+
     <section class="timelineContainer">
         <ul class="timeline">
             <li class="event reveal">
                 <span class="date">01 oktober 2012</span>
                 <h3 class="title">Oprichting De Voorhoede</h3>
-                
+
             </li>
             <li class="event reveal">
                 <span class="date">01 juli 2013</span>
                 <h3 class="title">Eerste Web App voor TV</h3>
                 <p>Ziggo SGUI met jQueryMX</p>
-                <img class="imageTimeline"  src="./Images/timeline1.png">
+                <img class="imageTimeline" src="./Images/DesktopTimeline1.png" alt="Eerste web app">
             </li>
             <li class="event reveal">
                 <span class="date">01 juni 2014</span>
@@ -103,7 +127,7 @@
                 <span class="date">13 maart 2016</span>
                 <h3 class="title">Begonnen met lesgeven op de<br>Hogeschool van Amsterdam</h3>
                 <p>Minors gericht<br>op webdevelopment</p>
-                <img class="imageTimeline" src="./Images/timeline2.png">
+                <img class="imageTimeline" src="./Images/DesktopTimeline2.png" alt="Lesgeven op school">
             </li>
             <li class="event reveal">
                 <span class="date">17 augustus 2016</span>
@@ -114,7 +138,8 @@
                 <span class="date">07 november 2016</span>
                 <h3 class="title">Eerste code class</h3>
                 <p>Collega's leren elkaar nieuwe dingen</p>
-                <img class="imageTimeline" src="./Images/timeline3.png">
+                <img class="imageTimeline" src="./Images/DesktopTimeline3.png" alt="Eerste code class">
+
             </li>
             <li class="event reveal">
                 <span class="date">01 januari 2019</span>
@@ -125,57 +150,58 @@
                 <span class="date">21 januari 2020</span>
                 <h3 class="title">Opening nieuw kantoor Delft</h3>
                 <p>Onze eigen plek aan de Koornmarkt</p>
-                <img class="imageTimeline" src="./Images/timeline4.png">
+                <img class="imageTimeline" src="./Images/DesktopTimeline4.png"
+                    alt="Opening nieuw kantoor in Delft">
             </li>
             <li class="event reveal">
                 <span class="date">21 september 2021</span>
                 <h3 class="title">Opening nieuw kantoor Amsterdam</h3>
                 <p>Samen met Hike One hebben we nu een kantoor in de <br>Houthavens</p>
-                <img class="imageTimeline" src="./Images/timeline5.png">
+                <img class="imageTimeline" src="./Images/DesktopTimeline5.png" alt="Opening nieuw kantoor in Amsterdam">
             </li>
         </ul>
     </section>
 
     <!-- Reis door de tijd -->
-    
+
     <section class="reis reveal">
         <h3 class="collageTitel">Een reis door de tijd</h3>
-            <div class="gridContainerMobile">
-                <img src="./Images/reis1.png">
-                <img src="./Images/reis2.png">
-                <img src="./Images/reis3.png">
-                <img src="./Images/reis4.png">
-                <img src="./Images/reis5.png">
-                <img src="./Images/reis6.png">
-                <img src="./Images/reis7.png">
-                <img src="./Images/reis8.png">
-                <img src="./Images/reis9.png">
-                <img src="./Images/reis10.png">
-                <img src="./Images/reis11.png">
-                <img src="./Images/reis12.png">
-                <img src="./Images/reis13.png">
-                <img src="./Images/reis14.png">
-                <img src="./Images/reis15.png">
-                <img src="./Images/reis16.png">
-            </div>
-            <div class="gridContainerTablet">
-                <img src="./Images/tablet1.png">
-                <img src="./Images/tablet2.png">
-                <img src="./Images/tablet3.png">
-                <img src="./Images/tablet4.png">
-                <img src="./Images/tablet5.png">
-                <img src="./Images/tablet6.png">
-                <img src="./Images/tablet7.png">
-                <img src="./Images/tablet8.png">
-                <img src="./Images/tablet9.png">
-                <img src="./Images/tablet10.png">
-                <img src="./Images/tablet11.png">
-                <img src="./Images/tablet12.png">
-                <img src="./Images/tablet13.png">
-                <img src="./Images/tablet14.png">
-                <img src="./Images/tablet15.png">
-                <img src="./Images/tablet16.png">
-            </div>
+        <div class="gridContainerMobile">
+            <img src="./Images/reis1.png" alt="reis door de tijd">
+            <img src="./Images/reis2.png" alt="reis door de tijd">
+            <img src="./Images/reis3.png" alt="reis door de tijd">
+            <img src="./Images/reis4.png" alt="reis door de tijd">
+            <img src="./Images/reis5.png" alt="reis door de tijd">
+            <img src="./Images/reis6.png" alt="reis door de tijd">
+            <img src="./Images/reis7.png" alt="reis door de tijd">
+            <img src="./Images/reis8.png" alt="reis door de tijd">
+            <img src="./Images/reis9.png" alt="reis door de tijd">
+            <img src="./Images/reis10.png" alt="reis door de tijd">
+            <img src="./Images/reis11.png" alt="reis door de tijd">
+            <img src="./Images/reis12.png" alt="reis door de tijd">
+            <img src="./Images/reis13.png" alt="reis door de tijd">
+            <img src="./Images/reis14.png" alt="reis door de tijd">
+            <img src="./Images/reis15.png" alt="reis door de tijd">
+            <img src="./Images/reis16.png" alt="reis door de tijd">
+        </div>
+        <div class="gridContainerTablet">
+            <img src="./Images/tablet1.png" alt="reis door de tijd">
+            <img src="./Images/tablet2.png" alt="reis door de tijd">
+            <img src="./Images/tablet3.png" alt="reis door de tijd">
+            <img src="./Images/tablet4.png" alt="reis door de tijd">
+            <img src="./Images/tablet5.png" alt="reis door de tijd">
+            <img src="./Images/tablet6.png" alt="reis door de tijd">
+            <img src="./Images/tablet7.png" alt="reis door de tijd">
+            <img src="./Images/tablet8.png" alt="reis door de tijd">
+            <img src="./Images/tablet9.png" alt="reis door de tijd">
+            <img src="./Images/tablet10.png" alt="reis door de tijd">
+            <img src="./Images/tablet11.png" alt="reis door de tijd">
+            <img src="./Images/tablet12.png" alt="reis door de tijd">
+            <img src="./Images/tablet13.png" alt="reis door de tijd">
+            <img src="./Images/tablet14.png" alt="reis door de tijd">
+            <img src="./Images/tablet15.png" alt="reis door de tijd">
+            <img src="./Images/tablet16.png" alt="reis door de tijd">
+        </div>
     </section>
 
     <!-- Felicitatie formulier -->
@@ -185,15 +211,21 @@
                 <h1>Hiep hiep hoera!</h1>
                 <p>Je felicitatie sturen via ons formulier, dat kan!</p>
             </div>
-                <form class="felicitatieForm">
-                    <label for="name">Mijn naam is</label>
+            <form class="felicitatieForm">
+                <label>
+                    Mijn naam is
                     <input type="text" name="name" placeholder="Naam">
-                    <label for="email">Mijn e-mailadres is</label>
+                </label>
+                <label>
+                    Mijn e-mailadres is
                     <input type="email" name="email" placeholder="E-mailadres">
-                    <label for="message">Mijn bericht</label>
+                </label>
+                <label>
+                    Mijn bericht
                     <textarea name="message" placeholder="Felicitatie"></textarea>
-                    <input class="button" type="submit" value="Versturen →">
-                </form>
+                </label>
+                <input class="button" type="submit" value="Versturen →">
+            </form>
         </article>
     </section>
 
@@ -215,6 +247,6 @@
             </li>
         </ul>
     </section>
-    <script src="script.js"></script>  
 </body>
+
 </html>

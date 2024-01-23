@@ -2,17 +2,17 @@
 
 
 * {
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
 }
 
 :root {
-    --backgroundColor:#FFFECA;
-    --primaryTextBtnColor:#0000FF;
-    --yellowTextBackground:#FFE400;
-    --lightTextBackground:rgba(255, 255, 255, 1);
+    --backgroundColor: #FFFECA;
+    --primaryTextBtnColor: #0000FF;
+    --yellowTextBackground: #FFE400;
+    --lightTextBackground: rgba(255, 255, 255, 1);
 }
 
 body {
@@ -35,6 +35,7 @@ h2 {
     font-weight: 700;
     line-height: 1.8125rem;
 }
+
 p {
     font-size: 1.125rem;
     font-style: normal;
@@ -75,9 +76,9 @@ p {
     transition: transform 300ms;
     cursor: pointer;
     box-shadow: 0 3px 5px #777777;
-    
 
-    &  svg {
+
+    & svg {
         fill: white;
         width: 8vw;
         height: auto;
@@ -85,25 +86,36 @@ p {
 
 }
 
-.backToTop:hover{
+.backToTop:hover {
     transform: scale(0.9);
 }
+
 /* Header styling */
 .header {
     display: flex;
     flex-direction: column;
     color: #0000FF;
     padding-left: 1.25rem;
-    padding-right: 1.25rem;
     padding-top: 3.56rem;
-    margin-bottom: 6.88rem;
-}
 
-.logo {
-    align-self: flex-end;
-    padding-right: 1.81rem;
-    padding-top: 1.5rem;
+    & .headerText {
+        color: #0000FF;
+    }
 
+    & .logo {
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        position: relative;
+        padding-right: 1.81rem;
+        padding-top: 1.5rem;
+        margin-bottom: 6.88rem;
+
+        & img {
+            max-width: 11.375rem;
+            height: auto;
+        }
+    }
 }
 
 /* Styling voor het eerste kaartje */
@@ -116,17 +128,23 @@ p {
     & .introCardImageContainer {
         position: relative;
         width: 100%;
-    }
 
     & .introCardImage {
         width: 100%;
         display: block;
         height: auto;
-    }
+    } }
 
+    & .introCardTextContainer {
+        position: relative;
+    }
     & .introCardTitle {
+        display: inline-block;
         position: absolute;
-        bottom: 0;
+        width: max-content;
+        max-width: 100%;
+        margin-left: auto;
+        bottom: 100%;
         right: 0;
         background: white;
         color: var(--primaryTextBtnColor);
@@ -134,7 +152,7 @@ p {
         padding-top: 0.94rem;
         padding-right: 0.81rem;
         padding-bottom: 0.44rem;
-}
+    }
 
     & .introCardText {
         color: var(--primaryTextBtnColor);
@@ -189,6 +207,7 @@ p {
         margin-right: auto;
     }
 }
+
 /* Styling voor de tweede kaart */
 .introCardTwee {
     max-width: 27.625rem;
@@ -201,9 +220,14 @@ p {
         bottom: -4px;
     }
 
+    & .introTextContainer{
+        position: relative;
+    }
     & .introCardTitleTwee {
+        display: inline-block;
         position: absolute;
-        bottom: 0;
+        width: max-content;
+        bottom: 100%;
         left: 0;
         background: white;
         color: var(--primaryTextBtnColor);
@@ -212,10 +236,13 @@ p {
         padding-right: 0.81rem;
         padding-bottom: 0.44rem;
     }
+
     & .introTextContainer {
         background-color: white;
         margin-bottom: 6.88rem;
+
     }
+
     & .introCardTextTwee {
         color: var(--primaryTextBtnColor);
         padding-top: 1.31rem;
@@ -223,6 +250,7 @@ p {
         padding-right: 0.81rem;
     }
 }
+
 /* Styling voor stukje over Jasper */
 .profileJasper {
     display: flex;
@@ -240,7 +268,8 @@ p {
     & .titleJasper {
         align-self: flex-start;
         color: var(--primaryTextBtnColor);
-        font-size: 1.125rem;
+        font-size: 1.05rem;
+        margin-bottom: 1rem;
     }
 
     & .textJasper {
@@ -251,7 +280,7 @@ p {
         margin-top: 0.31rem;
     }
 
-    & .buttonJasper{
+    /* & .buttonJasper{
         align-self: flex-start;
         border: none;
         border-radius: 0.3125rem;
@@ -266,7 +295,7 @@ p {
         font-weight: 400;
         line-height: 1.25rem;
         margin-top: 0.94rem;
-    }
+    } */
 }
 
 /* Timeline styling */
@@ -285,9 +314,9 @@ p {
         padding-left: 0.63rem;
         padding-bottom: 6.5rem;
         border-left: 0.1em solid var(--primaryTextBtnColor);
-    
+
         & .event {
-            padding-left: .87rem; 
+            padding-left: .87rem;
             padding-bottom: 3.44rem;
 
             & .title {
@@ -317,7 +346,7 @@ p {
             & p {
                 font-size: 1rem;
                 font-weight: 300;
-                margin-top:0.31rem;
+                margin-top: 0.31rem;
                 margin-bottom: 1.56rem;
                 line-height: 1.5625rem;
             }
@@ -328,10 +357,10 @@ p {
                 padding-right: 1.38rem;
             }
         }
-}}
+    }
+}
 
 /* Reis door de tijd */
-
 .reis {
     display: flex;
     flex-direction: column;
@@ -347,7 +376,7 @@ p {
         font-weight: 700;
         line-height: 1.8125rem;
         margin-bottom: 1.58rem;
-        }
+    }
 
     & .gridContainerMobile {
         display: grid;
@@ -359,30 +388,31 @@ p {
 
         & img {
             max-width: 100%;
-            height: auto; 
+            height: auto;
             display: block;
             border: none;
         }
     }
+
     & .gridContainerTablet {
         display: none;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 0;
         margin: 0 auto;
         overflow: hidden;
-    
-            & img {
-                max-width: 100%;
-                height: auto; 
-                display: block;
-                border: none;
-            }
 
-    }}
+        & img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border: none;
+        }
+
+    }
+}
 
 /* FelicitatieSection */
-
- .felicitatieSection {
+.felicitatieSection {
     display: grid;
     max-width: 100%;
     grid-template-columns: repeat(6, 1fr);
@@ -398,13 +428,13 @@ p {
         grid-column-end: span 6;
         grid-row-start: 1;
         grid-row-end: span 5;
-        
+
         & h1 {
             font-size: 1.8rem;
             margin-bottom: .5rem;
         }
 
-    
+
         & p {
             color: var(--primaryTextBtnColor);
             font-size: 3.66vw;
@@ -420,23 +450,27 @@ p {
         grid-row-end: span 8;
         margin-right: -1em;
         margin-left: 1em;
-        
+
 
         & label {
             display: block;
             color: var(--primaryTextBtnColor);
             font-size: 1em;
-            margin-bottom: 1em;
+            /* line-height: 1em; */
         }
 
-        & input[type=text], input[type=email], textarea {
+        & input[type=text],
+        input[type=email],
+        textarea {
             width: 100%;
             display: block;
             outline: none;
             border: none;
             border-bottom: 0.1em solid var(--primaryTextBtnColor);
             font-size: 1em;
-            margin-bottom: 1em;
+            margin-bottom: .7em;
+            margin-top: .7em;
+            height: 2em;
         }
 
         & textarea {
@@ -450,120 +484,145 @@ p {
 }
 
 /* Felicitatie berichten */
-.berichtenSection{
+.berichtenSection {
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
 
     & h2 {
-    display: flex;
-    justify-content: center;
-    color: var(--primaryTextBtnColor);
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.8125rem;
-    padding-top: 6.87rem;
-}
+        display: flex;
+        justify-content: center;
+        color: var(--primaryTextBtnColor);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.8125rem;
+        padding-top: 6.87rem;
+    }
+
     & .berichtenLijst {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 1em;
-    margin-left: 2.59rem;
-    margin-right: 1.44rem;
-    margin-bottom: 8.75rem;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1em;
+        margin-left: 2.59rem;
+        margin-right: 1.44rem;
+        margin-bottom: 8.75rem;
 
-    & li {
-        border-left: 0.1em solid var(--dim, #888);
-        padding: 1em;
-        margin-bottom: 1em;
+        & li {
+            border-left: 0.1em solid var(--dim, #888);
+            padding: 1em;
+            margin-bottom: 1em;
 
-        & p {
-            color: var(--primaryTextBtnColor);
+            & p {
+                color: var(--primaryTextBtnColor);
+            }
+
+            & span {
+                display: inline-block;
+                margin-top: 0.31rem;
+            }
         }
-
-        & span {
-            display: inline-block;
-            margin-top: 0.31rem;
-        }
-    }}}
+    }
+}
 
 /* classes voor de scroll down animatie */
-.reveal{
+.reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: 1s all ease;
-  }
-  
-.active{
+}
+
+.active {
     transform: translateY(0);
     opacity: 1;
-  }
+}
+
 /* Tablet styling */
 @media screen and (min-width: 720px) {
 
-    
-.introCard {
+
+    .button {
+        border-radius: 0.5rem;
+        padding: 0.550rem 1rem;
+        font-size: 1.1rem;
+    }
+
+    .header {
+        flex-direction: row;
+        margin-bottom: 2em;
+        justify-content: space-between;
+        margin-left: 5rem;
+        margin-right: 5rem;
+
+
+        & .logo {
+            padding: 0;
+            margin-bottom: 2rem;
+         
+            & img {
+            max-width: 13rem;
+         }
+
+        
+        }
+    }
+
+    .introCard {
         display: flex;
         flex-direction: column;
         position: relative;
         max-width: 41.4375rem;
-        /* overflow: hidden; */
         margin: auto;
-    
-    
+
+
         & .introCardImageContainer {
-            position: relative;
-            width: 100%;
-            max-width: 27.625rem;
+            max-width: 32.5rem;
         }
-    
+
         & .introCardImage {
-            width: 100%;
-            display: block;
-            height: auto;
+            display: inline-block;
         }
-    
+
         & .introCardTitle {
+            display: inline-block;
             position: absolute;
-            bottom: -1px;
-            right: -8.38rem;
+            width: max-content;
+            bottom: 100%;
+            left: 0;
             background: white;
             color: var(--primaryTextBtnColor);
             padding-left: 1.63rem;
             padding-top: 0.94rem;
             padding-right: 0.81rem;
             padding-bottom: 0.44rem;
-    }
-    
+            }
+
         & .introCardText {
             color: var(--primaryTextBtnColor);
             background-color: white;
-            padding-top: 1.31rem;
-            padding-left: 2.44rem;
-            padding-right: 0.81rem;
-            padding-bottom: 1.31rem;
+            padding-top: .6rem;
             max-width: 27.625rem;
             margin-left: 13.8125rem;
-            /* left: 6.69rem; */
-            /* justify-content: right; */
+            font-size: 1.3rem;
+            line-height: 2rem;
         }
     }
-/* Styling feitjes tablet */
-.facts {
-    padding-top: 3.88rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    
-    
+
+    /* Styling feitjes tablet */
+    .facts {
+        padding-top: 3.88rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+
         & .factsTitle {
             font-size: 1.5rem;
         }
-    
+
         & .factsList {
             padding-top: 2rem;
             display: flex;
@@ -572,7 +631,7 @@ p {
             justify-content: center;
             padding-bottom: 3.19rem;
         }
-    
+
         & .fact {
             font-size: 1.250rem;
             padding-top: 0.45rem;
@@ -583,69 +642,65 @@ p {
             margin-left: 0.3rem;
             margin-right: 0.3rem;
         }
-    }   
-   
-/* Tweede info kaart tablet styling */
-.introCardTwee {
+    }
+
+    /* Tweede info kaart tablet styling */
+    .introCardTwee {
         display: flex;
         flex-direction: column;
         position: relative;
         align-items: end;
         max-width: 41.4375rem;
         margin: auto;
-    
+
         & .introCardImageContainerTwee {
             display: inline-block;
             position: relative;
             width: 100%;
-            max-width: 27.625rem;
+            max-width: 30.5rem;
         }
 
-        & .introCardTitleTwee {
-            position: absolute;
-            bottom: -1px;
-            left: -5.15rem;
-            background: white;
-            color: var(--primaryTextBtnColor);
-            padding-left: 1.63rem;
-            padding-top: 0.94rem;
-            padding-right: 0.81rem;
-            padding-bottom: 0.44rem;
+        & .introCardImage {
+            display: block;
+            width: 100%;
+            height: auto
         }
+
         & .introTextContainer {
-            background-color: white;
-            margin-bottom: 6.88rem;
-            margin-right: 13.8125rem;
+            margin-right: 10.9375rem;
         }
+
         & .introCardTextTwee {
             color: var(--primaryTextBtnColor);
             padding-top: 1.31rem;
             padding-left: 2.44rem;
-            padding-right: 0.81rem; 
+            padding-right: 0.81rem;
+            font-size: 1.3rem;
+            line-height: 2rem;
         }
     }
 
-/* Interview Jasper tablet styling */
-.profileJasper {
+    /* Interview Jasper tablet styling */
+    .profileJasper {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-left: 1.25rem;
         margin-right: 1.25rem;
-    
-    
+
+
         & .profilePictureJasper {
             border-radius: 50%;
             margin-bottom: 2.2rem;
             margin-right: 2.82rem;
         }
-    
+
         & .titleJasper {
             align-self: flex-start;
             color: var(--primaryTextBtnColor);
-            font-size: 1.125rem;
+            font-size: 1.5rem;
         }
-    
+
         & .textJasper {
             align-self: flex-start;
             color: black;
@@ -653,8 +708,8 @@ p {
             line-height: 2.1875rem;
             margin-top: 0.31rem;
         }
-    
-        & .buttonJasper{
+
+        & .buttonJasper {
             align-self: flex-start;
             border: none;
             border-radius: 0.3125rem;
@@ -672,80 +727,326 @@ p {
         }
     }
 
-/* Reis door de tijd tablet styling */
+    /* .timelineContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        padding: 1em;
+        margin: 0 auto;
+        margin-top: 7.22rem;
 
-.reis {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6.88rem;
+        & .timeline {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-start: 2;
+            flex-direction: column;
+            list-style: none;
+            max-width: 45rem;
+            padding-left: 0.63rem;
+            padding-bottom: 6.5rem;
+            border-left: none;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                width: 2px;
+                height: 100%;
+                background-color: var(--primaryTextBtnColor);
+            }
+            & .event {
+                flex-direction: column;
+                position: relative;
+                padding-left: .87rem;
+                padding-bottom: 3.44rem;
+                grid-column-start: 2;
+               
+                &:nth-child(odd) {
+                    grid-column-start: 1; 
+                    grid-column-end: 2;  
+                    justify-self: end;
+                }
+                & .title {
+                    color: blue;
+                    font-size: 1.7rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 1.8rem;
+                    margin-top: 0.31rem;
+                }
 
-    & .gridContainerMobile {
-    display: none;
-  }
+                & .title::before {
+                    content: "";
+                    background-color: var(--primaryTextBtnColor);
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: -0.965em;
+                }
 
-    & .gridContainerTablet {
-    display: grid;
-}
-}
+                & .date {
+                    font-weight: 300;
+                    z-index: 2;
+                }
 
-/* Felicitatie forum stylen tablet */
-.felicitatieSection {
-    display: grid;
-    
-    & .felicitatieText {
-   
+                & p {
+                    font-size: 1rem;
+                    font-weight: 300;
+                    margin-top: 0.31rem;
+                    margin-bottom: 1.56rem;
+                    line-height: 1.5625rem;
+                }
 
-        & h1 {
-        
-        font-size: 2.3rem;
-        margin-bottom: .7rem;
+                & .imageTimelineMobile {
+                   display: none;
+                }
+
+                & .imageTimelineDesktop {
+                    display: flex;
+                    max-width: 34.5625rem;
+                    height: auto;
+                }
+            }
+        }
+    } */
+
+    /* Reis door de tijd tablet styling */
+    .reis {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6.88rem;
+
+        & .collageTitel {
+            font-size: 1.7rem;
         }
 
-        & p {
-        
-        font-size: 1.7rem;
-     }}
-
-     & .felicitatieForm {
-
-        & label {
-            font-size: 1.2em;
+        & .gridContainerMobile {
+            display: none;
         }
 
-        & input[type=text], input[type=email], textarea {
-            font-size: 1.2em;
+        & .gridContainerTablet {
+            display: grid;
+        }
+    }
+
+    /* Felicitatie forum stylen tablet */
+    .felicitatieSection {
+        display: grid;
+        margin-right: 5rem;
+        margin-left: 2rem;
+
+        & .felicitatieText {
+
+
+            & h1 {
+
+                font-size: 2.3rem;
+                margin-bottom: .7rem;
+            }
+
+            & p {
+                margin-top: .7em;
+                font-size: 1.5rem;
+            }
         }
 
-        & textarea {
-            font-size: 1.2em;
+        & .felicitatieForm {
+            background-color: white;
+            padding: 1em;
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            grid-row-start: 2;
+            grid-row-end: span 8;
+            margin-right: -3em;
+            margin-left: 3em;
+            margin-top: 3em;
+
+            & label {
+                font-size: 1.2em;
+            }
+
+            & input[type=text],
+            input[type=email],
+            textarea {
+                font-size: 1.2em;
+            }
+
+            & textarea {
+                font-size: 1.2em;
+            }
         }
+    }
+
+    /* berichten voor felicitaties stylen tablet */
+    .berichtenSection {
+        display: flex;
+        position: relative;
+        align-items: center;
+
+        & h2 {
+            display: flex;
+            justify-content: center;
+            color: var(--primaryTextBtnColor);
+            font-style: normal;
+            font-size: 1.7rem;
+            font-weight: 700;
+            line-height: 1.8125rem;
+            padding-top: 6.87rem;
+        }
+
+        & .berichtenLijst {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2em;
+            margin-left: 2.59rem;
+            margin-right: 1.44rem;
+            margin-bottom: 4.75rem;
+
+            & li {
+                border-left: 0.1em solid var(--dim, #888);
+                padding: 1em;
+                margin-bottom: 3em;
+                width: 40vw;
+
+                & p {
+                    font-size: 1.3rem;
+                }
+
+                & span {
+                    font-size: 1.15rem;
+                }
+            }
+        }
+
     }
 }
 
-.berichtenSection {
-    display: flex;
-    position: relative;
-    align-items: center;
 
-    & .berichtenLijst {
-        list-style-type: none;
-        display: flex;
+@media screen and (min-width: 1080px) {
+
+
+ .header {
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 2em;
-        margin-left: 2.59rem;
-        margin-right: 1.44rem;
-        margin-bottom: 8.75rem;
+        margin-bottom: 2em;
+        justify-content: space-between;
+        margin-left: 5rem;
+        margin-right: 5rem;
 
-        & li {
-            border-left: 0.1em solid var(--dim, #888);
-            padding: 1em;
-            margin-bottom: 3em;
-            width: 40vw;
-}}
 
+        & .logo {
+            padding: 0;
+            margin-bottom: 2rem;
+         
+            & img {
+            max-width: 15.5rem;
+         }
+
+        
+        }
+    }    
+/* 
+    .introCard {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        max-width: 72.5rem;
+        overflow: visible;
+        margin: 0;
+    
+    e
+        & .introCardImageContainer {
+            position: relative;
+            width: 35.375rem;
+            grid-area: image;
+    
+        & .introCardImage {
+            width: 100%;
+            display: block;
+            height: auto;
+        } }
+    
+        & .introCardTextContainer {
+            position: relative;
+            grid-area: text;
+        }
+        & .introCardTitle {
+            display: initial;
+            position: initial;
+            width: initial;
+            max-width: 100%;
+            margin-left: 0;
+            bottom: initial;
+            right: initial;
+            padding: initial;
+        }
+    
+        & .introCardText {
+            color: var(--primaryTextBtnColor);
+            background-color: white;
+            padding: initial;
+    }
+
+} */
+
+.introCard {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    max-width: 72.5rem;
+    margin: auto;
+    overflow: visible;
+
+
+    & .introCardImageContainer {
+        max-width: 35.375rem;
+        z-index: ;
+    }
+
+    & .introCardImage {
+        display: block;
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    & .introCardTextContainer {
+        position: relative;
+        width: 100%;
+        height: auto;
+    
+    & .introCardTitle {
+        display: flex;
+        position: relative;
+        width: initial;
+        bottom: initial;
+        left: initial;
+        background: white;
+        color: var(--primaryTextBtnColor);
+        padding-left: 1.63rem;
+        padding-top: 0.94rem;
+        padding-right: 0.81rem;
+        padding-bottom: 0.44rem;
+        }
+
+    & .introCardText {
+        color: var(--primaryTextBtnColor);
+        font-size: 1.563rem;
+        line-height: 2.313rem;
+        background-color: white;
+        padding: initial;
+        padding-left: 10rem;
+        max-width: fit-content;
+        /* max-height: 24.75rem; */
+        margin-left: 0;
+    }}
+}
 }
